@@ -4,6 +4,10 @@
 
 ——网上水果识别检测的项目已经可以说是烂大街了，但是品质检测的比较少一点(*╹▽╹*)
 
+#### 0.preview
+
+<img src="C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20250314204502343.png" alt="image-20250314204502343" style="zoom: 33%;" />
+
 #### 1.model_part
 
 - 我们使用了带预训练权重的YOLOv3模型（Github链接：[bubbliiiing/yolo3-pytorch: 这是一个yolo3-pytorch的源码，可以用于训练自己的模型。](https://github.com/bubbliiiing/yolo3-pytorch)），但是对其中的backbone部分进行了修改，见model_part/nets/new_model.py
