@@ -6,7 +6,7 @@
 
 #### 0.preview
 
-<img src="C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20250314204502343.png" alt="image-20250314204502343" style="zoom: 33%;" />
+![945b08bdee58efaa462794f6516f267](.\preview\945b08bdee58efaa462794f6516f267.png)
 
 #### 1.model_part
 
