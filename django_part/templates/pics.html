@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片处理</title>
+    <script src="../static/jquery-3.4.1.min.js"></script>
+    <style>
+        body {
+            background: url("../static/fruit_bg.png") no-repeat center center fixed;
+            background-size: cover;
+            opacity: {{ background_opacity }};
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 60%;
+            max-width: 800px;
+            background: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            flex-direction: column;
+        }
+
+        .box-container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .upload-box, .result-box {
+            width: 300px;
+            height: 300px;
+            border: 2px dashed #aaa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.9);
+            position: relative;
+        }
+
+        .upload-box input {
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            cursor: pointer;
+        }
+
+        .upload-box label {
+            font-size: 16px;
+            color: #666;
+            text-align: center;
+            pointer-events: none;
+        }
+
+        .upload-box img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .result-box img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        #processButton {
+            display: block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #processButton:hover {
+            background-color: #0056b3;
+        }
+
+        .info {
+            margin-top: 20px;
+            width: 60%;
+            max-width: 800px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+    <div class="box-container">
+        <!-- 上传图片 -->
+        <div class="upload-box">
+            <label for="imageUpload" id="uploadLabel">点击上传图片</label>
+            <input type="file" id="imageUpload" accept="image/*">
+            <img id="uploadedImage" src="" alt="上传的图片" style="display: none;"> <!-- 显示上传的图片 -->
+        </div>
+
+        <!-- 处理后图片 -->
+        <div class="result-box">
+            <img id="processedImage" src="" alt="处理后的图片">
+        </div>
+    </div>
+
+    <!-- 处理按钮 -->
+    <button id="processButton">处理图片</button>
+</div>
+
+<!-- 处理信息 -->
+<div class="info">
+    <p id="resultText">{{ processing_info }}</p>
+</div>
+
+<script>
+    $(document).ready(function () {
+        let selectedFile = null;
+
+        // 上传图片时，显示选择的图片，并隐藏上传提示文字
+        $("#imageUpload").change(function () {
+            selectedFile = this.files[0];
+
+            if (selectedFile) {
+                let reader = new FileReader();
+                reader.onload = function (e) {
+                    // 显示上传的图片
+                    $("#uploadedImage").attr("src", e.target.result).show();
+                    // 隐藏上传图片的提示文字
+                    $("#uploadLabel").hide();
+                }
+                reader.readAsDataURL(selectedFile);  // 读取文件并显示
+            }
+        });
+
+        // 处理按钮点击时，发起 Ajax 请求
+        $("#processButton").click(function () {
+            if (!selectedFile) {
+                alert("请先上传图片！");
+                return;
+            }
+
+            let formData = new FormData();
+            formData.append("image", selectedFile);
+
+            // 获取 CSRF 令牌
+            let csrftoken = $('[name="csrfmiddlewaretoken"]').val();
+
+            $.ajax({
+                url: "/pics",  // 后端接口
+                type: "POST",
+                data: formData,
+                processData: false,
+                contentType: false,
+                xhrFields: {
+                    responseType: "blob"  // 返回处理后的图片
+                },
+                headers: {
+                    "X-CSRFToken": csrftoken  // 添加 CSRF 令牌
+                },
+                success: function (blob) {
+                    let imgURL = URL.createObjectURL(blob);
+                    // 显示处理后的图片
+                    $("#processedImage").attr("src", imgURL);
+                    $("#resultText").text("图片处理成功！");
+                },
+                error: function () {
+                    $("#resultText").text("图片处理失败，请重试！");
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>

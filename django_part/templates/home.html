@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+{% load static %}
+<body>
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" id="imageInput" accept="image/*">
+        <button type="button" id="uploadBtn">上传</button>
+    </form>
+
+{#    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>#}
+    <script src="{% static 'jquery-3.4.1.min.js' %}"></script>
+    <script>
+        $("#uploadBtn").click(function() {
+            alert("111");
+            let file = $("#imageInput")[0].files[0];
+            if (!file) {
+                alert("请选择图片");
+                return;
+            }
+
+            let formData = new FormData();
+            formData.append("image", file);
+
+            // 获取页面中 CSRF token 值
+            formData.append("csrfmiddlewaretoken", $('[name="csrfmiddlewaretoken"]').val());
+
+            $.ajax({
+                url: "http://localhost:8000/home", // 请求地址
+                type: "POST",
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function(response) {
+                    if (response) {
+                        alert("上传成功");
+                    } else {
+                        alert("上传失败");
+                    }
+                },
+                error: function(xhr, status, error) {
+                    alert("上传失败: " + error);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
