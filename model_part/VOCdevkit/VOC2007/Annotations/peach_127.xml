@@ -1,0 +1,26 @@
+<annotation>
+	<folder>peach_B</folder>
+	<filename>2_1.png</filename>
+	<path>C:\Users\QINGYU\Desktop\datasets\newDatasets\peach\peach_B\2_1.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>862</width>
+		<height>718</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>peach_B</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>46</xmin>
+			<ymin>2</ymin>
+			<xmax>839</xmax>
+			<ymax>695</ymax>
+		</bndbox>
+	</object>
+</annotation>

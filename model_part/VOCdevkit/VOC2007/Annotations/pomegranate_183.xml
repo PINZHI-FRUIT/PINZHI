@@ -1,0 +1,26 @@
+<annotation>
+	<folder>pomegranate_img</folder>
+	<filename>pomegranate_183.jpg</filename>
+	<path>C:\Users\tanya\Desktop\plumGuavaPomegrate\分割出来的新\pomegranate_img\pomegranate_183.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>433</width>
+		<height>426</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>pomegranate_C</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>31</xmin>
+			<ymin>42</ymin>
+			<xmax>418</xmax>
+			<ymax>403</ymax>
+		</bndbox>
+	</object>
+</annotation>

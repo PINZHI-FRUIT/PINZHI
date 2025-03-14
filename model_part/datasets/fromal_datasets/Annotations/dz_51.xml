@@ -1,0 +1,26 @@
+<annotation>
+	<folder>dzlr</folder>
+	<filename>dz8.png</filename>
+	<path>D:\desktop\dzlr\dz8.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>142</width>
+		<height>188</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>dz_A</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>9</xmin>
+			<ymin>28</ymin>
+			<xmax>118</xmax>
+			<ymax>134</ymax>
+		</bndbox>
+	</object>
+</annotation>

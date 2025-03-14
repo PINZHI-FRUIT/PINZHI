@@ -1,0 +1,26 @@
+<annotation>
+	<folder>番石榴</folder>
+	<filename>guava_121.png</filename>
+	<path>D:\AADC\李子+番石榴+石榴 (5)\番石榴\guava_121.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>501</width>
+		<height>515</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>guava_A</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>28</xmin>
+			<ymin>43</ymin>
+			<xmax>468</xmax>
+			<ymax>488</ymax>
+		</bndbox>
+	</object>
+</annotation>

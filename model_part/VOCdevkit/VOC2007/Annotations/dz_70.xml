@@ -1,0 +1,26 @@
+<annotation>
+	<folder>dz</folder>
+	<filename>Snipaste_2024-01-19_19-53-07.png</filename>
+	<path>D:\desktop\dz\Snipaste_2024-01-19_19-53-07.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>158</width>
+		<height>152</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>dz_A</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>14</xmin>
+			<ymin>14</ymin>
+			<xmax>141</xmax>
+			<ymax>141</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,26 @@
+<annotation>
+	<folder>pear_B</folder>
+	<filename>3.png</filename>
+	<path>C:\Users\QINGYU\Desktop\datasets\newDatasets\pear\pear_B\3.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>209</width>
+		<height>213</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>pear_B</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1</xmin>
+			<ymin>1</ymin>
+			<xmax>209</xmax>
+			<ymax>213</ymax>
+		</bndbox>
+	</object>
+</annotation>

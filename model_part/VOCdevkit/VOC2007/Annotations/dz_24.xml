@@ -1,0 +1,26 @@
+<annotation>
+	<folder>dzlr</folder>
+	<filename>dz30.png</filename>
+	<path>D:\desktop\dzlr\dz30.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>233</width>
+		<height>157</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>dz_A</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>36</xmin>
+			<ymin>17</ymin>
+			<xmax>194</xmax>
+			<ymax>148</ymax>
+		</bndbox>
+	</object>
+</annotation>

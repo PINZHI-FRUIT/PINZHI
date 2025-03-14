@@ -1,0 +1,26 @@
+<annotation>
+	<folder>C</folder>
+	<filename>8.jpg</filename>
+	<path>C:\Users\66460\Desktop\dc\appleImg\training\C\8.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>222</width>
+		<height>227</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>apple_C</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>48</xmin>
+			<ymin>53</ymin>
+			<xmax>180</xmax>
+			<ymax>184</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,26 @@
+<annotation>
+	<folder>李子</folder>
+	<filename>plum_63.png</filename>
+	<path>D:\AADC\李子+番石榴+石榴 (5)\李子\plum_63.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>438</width>
+		<height>418</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>plum_A</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>59</xmin>
+			<ymin>41</ymin>
+			<xmax>403</xmax>
+			<ymax>382</ymax>
+		</bndbox>
+	</object>
+</annotation>

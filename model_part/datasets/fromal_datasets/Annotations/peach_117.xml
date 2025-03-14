@@ -1,0 +1,26 @@
+<annotation>
+	<folder>new2</folder>
+	<filename>1116.png</filename>
+	<path>D:\dachuang\newData\imgs\peaches_classified\new2\1116.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>605</width>
+		<height>612</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>peach_B</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>8</xmin>
+			<ymin>24</ymin>
+			<xmax>597</xmax>
+			<ymax>567</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,26 @@
+<annotation>
+	<folder>freshoranges1</folder>
+	<filename>vertical_flip_Screen Shot 2018-06-12 at 11.59.23 PM.png</filename>
+	<path>C:\Users\QINGYU\Desktop\大创\水果数据集\橙子+梨+桃子\橙子\kaggle\freshoranges1\vertical_flip_Screen Shot 2018-06-12 at 11.59.23 PM.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>190</width>
+		<height>196</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>orange_A</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>9</xmin>
+			<ymin>13</ymin>
+			<xmax>173</xmax>
+			<ymax>177</ymax>
+		</bndbox>
+	</object>
+</annotation>

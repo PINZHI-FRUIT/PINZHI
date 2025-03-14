@@ -1,0 +1,21 @@
+<annotation>
+  <folder>A</folder>
+  <filename>apple_A_734.jpg</filename>
+  <size>
+    <width>358</width>
+    <height>260</height>
+    <depth>3</depth>
+  </size>
+  <object>
+    <name>apple_A</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>91</xmin>
+      <ymin>74</ymin>
+      <xmax>268</xmax>
+      <ymax>235</ymax>
+    </bndbox>
+  </object>
+</annotation>

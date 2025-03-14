@@ -1,0 +1,26 @@
+<annotation>
+	<folder>new</folder>
+	<filename>Snipaste_2024-10-23_14-27-18.png</filename>
+	<path>D:\dachuang\newData\imgs\oranges\new\Snipaste_2024-10-23_14-27-18.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>901</width>
+		<height>901</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>orange_B</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>141</xmin>
+			<ymin>117</ymin>
+			<xmax>789</xmax>
+			<ymax>864</ymax>
+		</bndbox>
+	</object>
+</annotation>

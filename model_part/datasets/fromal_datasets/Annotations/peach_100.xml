@@ -1,0 +1,26 @@
+<annotation>
+	<folder>new</folder>
+	<filename>Snipaste_2024-10-23_19-59-02.png</filename>
+	<path>D:\dachuang\newData\imgs\peaches_classified\new\Snipaste_2024-10-23_19-59-02.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>249</width>
+		<height>246</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>peach_C</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>13</xmin>
+			<ymin>16</ymin>
+			<xmax>238</xmax>
+			<ymax>225</ymax>
+		</bndbox>
+	</object>
+</annotation>

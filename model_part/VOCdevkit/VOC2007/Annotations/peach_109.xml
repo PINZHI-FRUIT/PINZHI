@@ -1,0 +1,26 @@
+<annotation>
+	<folder>网上搜</folder>
+	<filename>106.png</filename>
+	<path>C:\Users\QINGYU\Desktop\大创\水果数据集\橙子+梨+桃子\桃子\网上搜\106.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>611</width>
+		<height>614</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>peach_B</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1</xmin>
+			<ymin>1</ymin>
+			<xmax>416</xmax>
+			<ymax>404</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,26 @@
+<annotation>
+	<folder>plum_img</folder>
+	<filename>plum_209.jpg</filename>
+	<path>C:\Users\tanya\Desktop\plumGuavaPomegrate\新加的\plum_img\plum_209.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>356</width>
+		<height>360</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>plum_C</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>34</xmin>
+			<ymin>36</ymin>
+			<xmax>313</xmax>
+			<ymax>320</ymax>
+		</bndbox>
+	</object>
+</annotation>

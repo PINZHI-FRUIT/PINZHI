@@ -1,0 +1,26 @@
+<annotation>
+	<folder>rottenoranges1</folder>
+	<filename>vertical_flip_Screen Shot 2018-06-12 at 11.32.17 PM.png</filename>
+	<path>C:\Users\QINGYU\Desktop\大创\水果数据集\橙子+梨+桃子\橙子\kaggle\rottenoranges1\vertical_flip_Screen Shot 2018-06-12 at 11.32.17 PM.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>278</width>
+		<height>230</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>orange_C</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>15</xmin>
+			<ymin>26</ymin>
+			<xmax>239</xmax>
+			<ymax>208</ymax>
+		</bndbox>
+	</object>
+</annotation>

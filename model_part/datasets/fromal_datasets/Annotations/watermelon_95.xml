@@ -1,0 +1,21 @@
+<annotation>
+  <folder>B</folder>
+  <filename>watermellon_B_162.jpg</filename>
+  <size>
+    <width>225</width>
+    <height>225</height>
+    <depth>3</depth>
+  </size>
+  <object>
+    <name>watermelon_B</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>36</xmin>
+      <ymin>37</ymin>
+      <xmax>189</xmax>
+      <ymax>187</ymax>
+    </bndbox>
+  </object>
+</annotation>

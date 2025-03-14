@@ -1,0 +1,26 @@
+<annotation>
+	<folder>B</folder>
+	<filename>36.jpg</filename>
+	<path>C:\Users\66460\Desktop\dc1024\watermelonImg\training\B\36.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>262</width>
+		<height>193</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>watermelon_B</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>62</xmin>
+			<ymin>55</ymin>
+			<xmax>177</xmax>
+			<ymax>166</ymax>
+		</bndbox>
+	</object>
+</annotation>

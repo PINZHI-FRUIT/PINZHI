@@ -1,0 +1,26 @@
+<annotation>
+	<folder>new</folder>
+	<filename>Snipaste_2024-10-23_18-52-02.png</filename>
+	<path>D:\dachuang\newData\imgs\pears\new\Snipaste_2024-10-23_18-52-02.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>837</width>
+		<height>845</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>pear_C</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>178</xmin>
+			<ymin>219</ymin>
+			<xmax>686</xmax>
+			<ymax>793</ymax>
+		</bndbox>
+	</object>
+</annotation>

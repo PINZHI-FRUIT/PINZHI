@@ -1,0 +1,33 @@
+<annotation>
+  <folder>A</folder>
+  <filename>watermellon_A_507.jpg</filename>
+  <size>
+    <width>390</width>
+    <height>260</height>
+    <depth>3</depth>
+  </size>
+  <object>
+    <name>watermelon_A</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>33</xmin>
+      <ymin>52</ymin>
+      <xmax>219</xmax>
+      <ymax>234</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>watermelon_A</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>193</xmin>
+      <ymin>3</ymin>
+      <xmax>363</xmax>
+      <ymax>178</ymax>
+    </bndbox>
+  </object>
+</annotation>

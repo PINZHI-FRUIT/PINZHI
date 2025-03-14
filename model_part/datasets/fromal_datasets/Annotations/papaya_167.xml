@@ -1,0 +1,26 @@
+<annotation>
+	<folder>mg2jpg</folder>
+	<filename>Snipaste_2024-10-24_20-57-16.jpg</filename>
+	<path>C:\Users\admin\Desktop\new_data_set\mg2jpg\Snipaste_2024-10-24_20-57-16.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>207</width>
+		<height>202</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>papaya_C</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>14</xmin>
+			<ymin>13</ymin>
+			<xmax>173</xmax>
+			<ymax>181</ymax>
+		</bndbox>
+	</object>
+</annotation>

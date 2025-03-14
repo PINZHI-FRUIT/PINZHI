@@ -1,0 +1,26 @@
+<annotation>
+	<folder>rottenoranges1</folder>
+	<filename>Screen Shot 2018-06-12 at 11.29.44 PM.png</filename>
+	<path>C:\Users\QINGYU\Desktop\大创\水果数据集\橙子+梨+桃子\橙子\kaggle\rottenoranges1\Screen Shot 2018-06-12 at 11.29.44 PM.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>488</width>
+		<height>444</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>orange_C</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>25</xmin>
+			<ymin>12</ymin>
+			<xmax>456</xmax>
+			<ymax>419</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,26 @@
+<annotation>
+	<folder>newB</folder>
+	<filename>29.png</filename>
+	<path>D:\dachuang\newData\imgs\pears\newB\29.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>777</width>
+		<height>777</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>pear_B</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>60</xmin>
+			<ymin>66</ymin>
+			<xmax>729</xmax>
+			<ymax>742</ymax>
+		</bndbox>
+	</object>
+</annotation>

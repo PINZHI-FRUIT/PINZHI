@@ -1,0 +1,26 @@
+<annotation>
+	<folder>bad_peaches</folder>
+	<filename>Snipaste_2024-02-25_16-36-32.png</filename>
+	<path>C:\Users\QINGYU\Desktop\datasets\newDatasets\peach\bad_peaches\Snipaste_2024-02-25_16-36-32.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>575</width>
+		<height>515</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>peach_C</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>16</xmin>
+			<ymin>6</ymin>
+			<xmax>541</xmax>
+			<ymax>492</ymax>
+		</bndbox>
+	</object>
+</annotation>

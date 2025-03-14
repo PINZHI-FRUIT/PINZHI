@@ -1,0 +1,26 @@
+<annotation>
+	<folder>C</folder>
+	<filename>30.jpg</filename>
+	<path>C:\Users\66460\Desktop\番茄\training\C\30.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>271</width>
+		<height>186</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>tomato_C</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>121</xmin>
+			<ymin>10</ymin>
+			<xmax>264</xmax>
+			<ymax>178</ymax>
+		</bndbox>
+	</object>
+</annotation>

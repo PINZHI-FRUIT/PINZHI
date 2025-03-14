@@ -1,0 +1,26 @@
+<annotation>
+	<folder>guava_img</folder>
+	<filename>guava_178.jpg</filename>
+	<path>C:\Users\tanya\Desktop\plumGuavaPomegrate\分割出来的新\guava_img\guava_178.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>864</width>
+		<height>847</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>guava_B</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>107</xmin>
+			<ymin>47</ymin>
+			<xmax>724</xmax>
+			<ymax>766</ymax>
+		</bndbox>
+	</object>
+</annotation>

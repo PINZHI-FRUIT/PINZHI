@@ -1,0 +1,26 @@
+<annotation>
+	<folder>B</folder>
+	<filename>apple_B_11.jpg</filename>
+	<path>C:\Users\66460\Desktop\dc\appleImg\training\B\apple_B_11.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>186</width>
+		<height>179</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>apple_B</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>22</xmin>
+			<ymin>18</ymin>
+			<xmax>160</xmax>
+			<ymax>154</ymax>
+		</bndbox>
+	</object>
+</annotation>

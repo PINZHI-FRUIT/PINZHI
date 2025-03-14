@@ -1,0 +1,26 @@
+<annotation>
+	<folder>mgjpg</folder>
+	<filename>mg (15).jpg</filename>
+	<path>C:\Users\admin\Desktop\new_data_set\mgjpg\mg (15).jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>171</width>
+		<height>174</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>papaya_B</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>10</xmin>
+			<ymin>5</ymin>
+			<xmax>113</xmax>
+			<ymax>140</ymax>
+		</bndbox>
+	</object>
+</annotation>

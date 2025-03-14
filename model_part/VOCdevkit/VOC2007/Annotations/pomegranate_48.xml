@@ -1,0 +1,26 @@
+<annotation>
+	<folder>红石榴</folder>
+	<filename>pomegranate_48.jpg</filename>
+	<path>D:\AADC\李子+番石榴+石榴 (5)\红石榴\pomegranate_48.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>192</width>
+		<height>256</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>pomegranate_B</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>34</xmin>
+			<ymin>60</ymin>
+			<xmax>120</xmax>
+			<ymax>183</ymax>
+		</bndbox>
+	</object>
+</annotation>

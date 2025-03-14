@@ -1,0 +1,26 @@
+<annotation>
+	<folder>网上搜</folder>
+	<filename>0124.jpg</filename>
+	<path>C:\Users\QINGYU\Desktop\大创\水果数据集\橙子+梨+桃子\梨\网上搜\0124.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>485</width>
+		<height>460</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>pear_A</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>16</xmin>
+			<ymin>14</ymin>
+			<xmax>474</xmax>
+			<ymax>453</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,26 @@
+<annotation>
+	<folder>bad_peaches</folder>
+	<filename>10.png</filename>
+	<path>C:\Users\QINGYU\Desktop\datasets\newDatasets\peach\bad_peaches\10.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>290</width>
+		<height>262</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>peach_C</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>8</xmin>
+			<ymin>15</ymin>
+			<xmax>245</xmax>
+			<ymax>249</ymax>
+		</bndbox>
+	</object>
+</annotation>

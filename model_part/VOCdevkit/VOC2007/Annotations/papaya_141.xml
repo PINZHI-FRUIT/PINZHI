@@ -1,0 +1,38 @@
+<annotation>
+	<folder>mg</folder>
+	<filename>mg (50).png</filename>
+	<path>D:\desktop\mg\mg (50).png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>298</width>
+		<height>314</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>papaya_A</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>21</xmin>
+			<ymin>59</ymin>
+			<xmax>264</xmax>
+			<ymax>287</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>papaya_C</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1</xmin>
+			<ymin>1</ymin>
+			<xmax>89</xmax>
+			<ymax>83</ymax>
+		</bndbox>
+	</object>
+</annotation>
