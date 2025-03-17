@@ -55,7 +55,7 @@ class YOLO(object):
         #   是否使用Cuda
         #   没有GPU可以设置成False
         #-------------------------------#
-        "cuda"              : True,#改了
+        "cuda"              : torch.cuda.is_available()  # 动态检测GPU是否可用
     }
 
     @classmethod

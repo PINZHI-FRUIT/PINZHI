@@ -4,8 +4,7 @@ import torch
 from PIL import Image, ImageDraw, ImageFont
 from ts.yolo import YOLO
 
-device = torch.device("cuda")
-# device = torch.device("cpu")
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 class YOLODetector:
     _instance = None  # 单例实例
     yoloCls = ['orange_A', 'orange_B', 'orange_C', 'peach_A', 'peach_B', 'peach_C', 'pear_A', 'pear_B', 'pear_C',
