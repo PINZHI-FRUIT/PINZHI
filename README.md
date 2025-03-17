@@ -6,7 +6,7 @@
 
 #### 0.preview
 
-(./preview/preview.png)
+![945b08bdee58efaa462794f6516f267](./preview/preview.png)
 =======
 #### 1.model_part
 
