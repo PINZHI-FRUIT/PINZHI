@@ -113,7 +113,8 @@
 
         <!-- 处理后图片 -->
         <div class="result-box">
-            <img id="processedImage" src="" alt="处理后的图片">
+            <span id="processedText">处理后的图片</span>
+            <img id="processedImage" src="" alt="处理后的图片" style="display: none;">
         </div>
     </div>
 
@@ -146,7 +147,6 @@
             }
         });
 
-        // 处理按钮点击时，发起 Ajax 请求
         $("#processButton").click(function () {
             if (!selectedFile) {
                 alert("请先上传图片！");
@@ -165,22 +165,36 @@
                 data: formData,
                 processData: false,
                 contentType: false,
-                xhrFields: {
-                    responseType: "blob"  // 返回处理后的图片
-                },
+                dataType: "json",  // 让 jQuery 自动解析 JSON
                 headers: {
                     "X-CSRFToken": csrftoken  // 添加 CSRF 令牌
                 },
-                success: function (blob) {
-                    let imgURL = URL.createObjectURL(blob);
-                    // 显示处理后的图片
-                    $("#processedImage").attr("src", imgURL);
-                    $("#resultText").text("图片处理成功！");
+                success: function (response) {
+                    // 显示处理后的图像
+                    let imgURL = "data:image/jpeg;base64," + response.processed_image;
+                    $("#processedImage").attr("src", imgURL).show();
+                    $("#processedText").hide();
+
+                    // 显示检测结果
+                    let resultsText = "";
+                    response.results.forEach(result => {
+                        let parts = result.class.split("_");
+                        let fruit = parts[0];
+                        let grade = parts[1];
+                        // 保留两位小数
+                        let bbox = result.box.map(num => num.toFixed(2)).join(", ");
+                        resultsText += `水果：${fruit}<br>等级：${grade}<br>边界框：[${bbox}]<br><br>`;
+                    });
+                    $("#resultText").html(resultsText);
                 },
-                error: function () {
-                    $("#resultText").text("图片处理失败，请重试！");
+                error: function (jqXHR, textStatus, errorThrown) {
+                    console.log("响应内容：", jqXHR.responseText);  // 打印响应的原始内容
+                    console.log("错误信息：", textStatus);  // 打印错误状态
+                    console.log("详细错误：", errorThrown);  // 打印详细的错误信息
+                    $("#resultText").text("失败");
                 }
             });
+
         });
     });
 </script>
