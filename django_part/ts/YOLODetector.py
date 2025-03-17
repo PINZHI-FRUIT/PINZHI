@@ -5,7 +5,7 @@ from PIL import Image, ImageDraw, ImageFont
 from ts.yolo import YOLO
 
 device = torch.device("cuda")
-
+# device = torch.device("cpu")
 class YOLODetector:
     _instance = None  # 单例实例
     yoloCls = ['orange_A', 'orange_B', 'orange_C', 'peach_A', 'peach_B', 'peach_C', 'pear_A', 'pear_B', 'pear_C',
@@ -24,7 +24,7 @@ class YOLODetector:
         目标检测方法：输入 PIL.Image，返回处理后的图片 (base64) 和检测结果 (JSON)
         """
         position, label = self.yolo.getXY(image)
-        if position.size == 0:
+        if position is None or position.size == 0:
             return {"message": "未检测到目标", "processed_image": None}
 
         # 处理检测结果

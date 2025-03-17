@@ -179,29 +179,36 @@
 
                     // 显示检测结果
                     let resultsText = "";
-                    response.results.forEach(result => {
-                        const fruitMap = {
-                            "orange": "橙子",
-                            "peach": "桃子",
-                            "pear": "梨",
-                            "apple": "苹果",
-                            "tomato": "番茄",
-                            "watermelon": "西瓜",
-                            "lemon": "柠檬",
-                            "papaya": "木瓜",
-                            "dz": "冬枣",
-                            "guava": "番石榴",
-                            "pomegranate": "石榴",
-                            "plum": "李子"
-                        };
+                    if(response.results){
+                         response.results.forEach(result => {
 
-                        let parts = result.class.split("_");
-                        let fruit = fruitMap[parts[0]] || parts[0]; // 如果找不到对应的中文，就保持原样
-                        let grade = parts[1];
-                        // 保留两位小数
-                        let bbox = result.box.map(num => num.toFixed(2)).join(", ");
-                        resultsText += `水果：${fruit}<br>等级：${grade}<br>边界框：[${bbox}]<br><br>`;
-                    });
+                            const fruitMap = {
+                                "orange": "橙子",
+                                "peach": "桃子",
+                                "pear": "梨",
+                                "apple": "苹果",
+                                "tomato": "番茄",
+                                "watermelon": "西瓜",
+                                "lemon": "柠檬",
+                                "papaya": "木瓜",
+                                "dz": "冬枣",
+                                "guava": "番石榴",
+                                "pomegranate": "石榴",
+                                "plum": "李子"
+                            };
+
+                            let parts = result.class.split("_");
+                            let fruit = fruitMap[parts[0]] || parts[0]; // 如果找不到对应的中文，就保持原样
+                            let grade = parts[1];
+                            // 保留两位小数
+                            let bbox = result.box.map(num => num.toFixed(2)).join(", ");
+                            resultsText += `水果：${fruit}<br>等级：${grade}<br>边界框：[${bbox}]<br><br>`;
+
+                        });
+                    }else{
+                        resultsText = response.message;
+                    }
+
                     $("#resultText").html(resultsText);
                 },
                 error: function (jqXHR, textStatus, errorThrown) {
